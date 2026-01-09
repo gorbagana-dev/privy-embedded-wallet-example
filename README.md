@@ -28,11 +28,15 @@ This example uses Gorbagana's custom RPC endpoint (`https://rpc.gorbagana.wtf/`)
 For custom SVM networks, transactions are sent by passing a custom `Connection` instance:
 
 ```typescript
-import { Connection, Transaction } from '@solana/web3.js';
+// Initialize connection instance with custom SVM RPC URL
+let connection = new Connection('insert-custom-SVM-rpc-url');
 
-const connection = new Connection('https://rpc.gorbagana.wtf/');
+// Build out the transaction object for your desired program
+// https://solana-foundation.github.io/solana-web3.js/classes/Transaction.html
+let transaction = new Transaction();
 
-const signature = await wallet.sendTransaction(transaction, connection);
+// Send transaction on custom SVM
+console.log(await wallet.sendTransaction!(transaction, connection));
 ```
 
 ## Note
