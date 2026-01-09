@@ -1,6 +1,6 @@
 # Gorbagana Privy Example
 
-A minimal React example demonstrating Privy wallet integration with a custom Solana RPC endpoint.
+A minimal React example demonstrating Privy wallet integration with Gorbagana Chain.
 
 ## Setup
 
